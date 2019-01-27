@@ -1,37 +1,44 @@
-def first(a):
-    
+
+#Write a  program that draws a grid
+
+def print_first(x):
+    '''print number of ' + - - - - + 'for grid'''
+
     print("\n"'+', end=" ")
     
-    for i in range (a):
+    for i in range (x):
         print("- - - - + ", end="")
         
-#    print("- - - - + ")
-    
-a= int(input("enter column: "))
-b= int(input("enter row :  "))
-#first(a)
 
-def second(b):
+    
+
+
+def print_second(y):
+    '''print number of '|  |  |' for grid'''
     
     print("\n"'|', end="")
     
-    for i in range(b):
+    for i in range(y):
         
         print('         |', end="")
-#    print("       |")    
-#second(b)
 
 
 
-def func(a,b):
-    first(a)
-    for i in range (b):
+
+def grid_print(x,y):
+    
+    ''' print grid with specified number of rows and colums'''
+    
+    print_first(x)
+    for i in range (y):
         for i in range (4):
-            second(a)
-        first(a)
+            print_second(x)
+        print_first(x)
 
+x= int(input("enter column: "))
+y= int(input("enter row :  "))
 
-func(a,b)
+grid_print(x,y)
             
         
     
