@@ -116,6 +116,7 @@ if__name__== '__main__':
     assert Locus(4)==7
     assert fibbo_sum_series(3)==fibbonacci(3)
     assert Locus_sum_series(4)==Locus(4)
+    assert Locus_sum_series(5)==Locus(5)
     
 
     
