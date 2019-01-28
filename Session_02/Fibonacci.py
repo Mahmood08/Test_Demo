@@ -2,10 +2,7 @@
 
 def fibonacci(n):
     """ Calculate the nth fibbonacci number"""
-    
-
-    
-    
+   
     first=0
     second=1
     if(n<0):
@@ -26,14 +23,9 @@ def fibonacci(n):
                
         return next     
             
-        
-
 def Locus(n):
     """ Calculate the nth Locus number"""
-    
-
-    
-    
+   
     first=2
     second=1
     
@@ -53,8 +45,6 @@ def Locus(n):
             first=second
             second=next
         return next
-
-
 
 def sum_series(n, first=0,second=1):
     
@@ -76,10 +66,6 @@ def sum_series(n, first=0,second=1):
             second=next
         return next
 
-
-
-
-
 n =int(input("Enter the input"))
     
 print("print nth fibonacci Number")
@@ -93,10 +79,6 @@ print(sum_series(n))
 
 print("print nth value of Lucas summation series")
 print(sum_series(n,2,1))
-
-
-
-
 
 if __name__ == "__main__" :
     
